@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --color1: #7d7987;
+    --color2: #fff;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    font-family: "Mulish", sans-serif;
+
+}
+
+.container {
+    position: absolute;
+    max-width: 100px;
+    margin: 0px;
+}
+
+.nav-bar {
+    position: fixed;
+    z-index: 1;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    list-style: none;
+
+    background-color: #FFFFFF;
+    padding: 30px 30px;
+
+
+
+}
+
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    padding: 30px;
+}
+
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+
+
+}
+
+.menu li a ::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: rgb(19, 19, 48);
+    transition: 0.4s ease-in-out;
+}
+
+.menu li a:hover,
+.menu li a:hover:after {
+    width: 100%;
+    color: rgb(19, 19, 48);
+
+
+
+}
+
+.open-manu,
+.close-menu {
+    position: absolute;
+    cursor: pointer;
+    font-size: 1rem;
+    display: none;
+
+}
+
+.open-manu {
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+}
+
+.close-menu {
+    top: 5%;
+    right: 50%;
+}
+
+#check {
+    display: none;
+}
+
+.wrapper {
+
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 995px;
+    padding: 10px;
+    background-color:
+        #ECF9FF;
+}
+
+.logo {
+    display: block;
+    margin-top: 20px;
+
+
+}
+
+.box {
+    box-sizing: border-box;
+    display: block;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 15%;
+    font-size: 15px;
+    padding: 10px;
+}
+
+
+/*--banar run--*/
+.group-33763 {
+    display: flex;
+    margin-top: 10%;
+
+}
+
+.banar {
+
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.stare {
+    margin-left: 85%;
+    margin-top: -10%;
+}
+
+
+/*-- how it work--*/
+
+.container-one {
+
+    position: relative;
+    top: 30px;
+    left: 0px;
+    text-align: center;
+}
+
+.card-three {
+    display: block;
+    display: flex;
+
+}
+
+.bacground-imag {
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 1200px;
+
+
+}
+
+
+
+.group-24-25 {
+    display: block;
+    display: flex;
+
+
+}
+
+/*-------popular packages---*/
+
+.popular-packages {
+    position: relative;
+    top: 200px;
+    left: 0px;
+    width: 110%;
+    height: 710px;
+    text-align: left;
+    background-color: #ECF9FF;
+}
+
+.popular-img {
+    position: relative;
+    top: 98px;
+    left: 98px;
+    display: flex;
+}
+
+.popular-tex {
+    position: relative;
+    top: 70px;
+    left: 110px;
+
+
+}
+
+/*--Globel promotion---*/
+
+.Globel {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 1200px;
+    font-size: 20px;
+
+}
+
+.promotion {
+    position: relative;
+    top: 300px;
+    left: 0px;
+    text-align: center;
+
+
+}
+
+.loren {
+    color: #7d7987;
+
+}
+
+.send-1 {
+    display: flex;
+
+}
+
+.send-2 {
+    display: block;
+    position: relative;
+    top: 450px;
+    left: 400px;
+
+}
+
+
+
+.send-3 {
+    display: block;
+    position: relative;
+    top: 650px;
+    left: 10px;
+
+
+}
+
+
+.send-4 {
+    display: block;
+    position: relative;
+    top: 800px;
+    left: 90px;
+
+}
+
+.send-5 {
+    display: block;
+    position: relative;
+    top: 400px;
+
+
+}
+
+.send-6 {
+    display: block;
+    position: relative;
+    top: 600px;
+
+    right: 200px;
+
+}
+
+/*--Subscribe--*/
+.subscribe {
+    position: absolute;
+    left: 150px;
+    width: 90%;
+
+
+}
+
+.un {
+    position: relative;
+    top: -60px;
+    left: 900px;
+}
+
+/*--Fotter--*/
+.Fotter {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 200px;
+    color: white;
+    background-color: #02022d;
+
+}
+
+.Quick {
+    display: block;
+    color: #7d7987;
+
+}
+
+
+
+/*----mideaquri---*/
+
+
+@media screen and (max-width: 600px) {
+
+
+    .container {
+        margin: 0 15px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #eeeaf5;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        transition: all 0.4s ease-in-out;
+        z-index: 100;
+
+
+    }
+
+    .menu li {
+        margin-top: 20px;
+    }
+
+    .menu li a {
+        padding: 10px;
+    }
+
+    .open-manu,
+    .close-menu {
+        display: block;
+    }
+
+    #check:checked~.menu {
+        right: 0;
+    }
+
+    .nav-bar {
+        position: fixed;
+        top: 10px;
+        left: 8px;
+        right: 0px;
+        width: 95%;
+        height: 15px;
+
+    }
+
+    .logo {
+        display: block;
+        margin-top: -10px;
+
+    }
+
+    /*-banar run--*/
+    .banar {
+        position: relative;
+        top: 40px;
+
+
+        height: auto;
+    }
+
+    .box {
+        position: relative;
+        width: 80%;
+        height: 15%;
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    .banar-right {
+        position: absolute;
+        top: 600px;
+        right: 370px;
+        width: 0px;
+        height: auto;
+
+    }
+
+    /*-- how it work--*/
+    .container-one {
+        position: relative;
+        top: 300px;
+
+    }
+
+    .card-three {
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+
+    .group-24-25 {
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .Group-25 {
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        top: 40px;
+        left: 0px;
+        width: 100%;
+        height: 400px;
+    }
+
+    /*--popular packages---*/
+    .popular-packages {
+        position: relative;
+        top: 260px;
+        left: 0px;
+        width: 110%;
+        height: 1600px;
+        text-align: left;
+        background-color: #ECF9FF;
+    }
+
+
+    .popular-img {
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        left: 0px;
+
+    }
+
+    .Package-2 {
+        display: block;
+        position: relative;
+        right: 60px;
+
+    }
+
+
+    /*---Globel promotion---*/
+    .send-1 {
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        top: 0px;
+        left: 0px;
+
+    }
+
+    /*--Subscribe--*/
+    .News {
+        display: block;
+        position: relative;
+        top: 120px;
+        right: 150px;
+        width: 450px;
+        height: 250px;
+
+
+    }
+
+    .un {
+        position: relative;
+        top: 400px;
+        left: 0px;
+        width: 10px;
+        height: 10px;
+
+        /*--fotter--*/
+    }
+
+    .Fotter {
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        top: 820px;
+        height: 800px;
+    }
+
+
+}
